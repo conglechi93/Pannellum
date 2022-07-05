@@ -419,7 +419,7 @@ export default function Mainpage() {
       }}
     >
       <CssBaseline />
-      <AppBar
+      {/* <AppBar
         position="absolute"
         className={clsx(
           classes.appBar,
@@ -471,7 +471,7 @@ export default function Mainpage() {
             </label>
           </Box>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <Drawer
         variant="permanent"
         classes={{
@@ -482,11 +482,11 @@ export default function Mainpage() {
         }}
         open={state.isOpenDrawer}
       >
-        <div className={classes.toolbarIcon}>
+        {/* <div className={classes.toolbarIcon}>
           <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton>
-        </div>
+        </div> */}
         <Divider />
         <List>
           <MainListItems
@@ -574,6 +574,7 @@ export default function Mainpage() {
           message={state.snackbarAction["message"]}
           onClose={onCloseSnackBar}
         />
+        
       </main>
     </div>
   );
